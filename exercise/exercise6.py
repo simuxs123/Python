@@ -2,8 +2,5 @@ string=input("Enter the word");
 reverseWord=""
 for i in reversed(range(len(string))):
     reverseWord+=string[i]
-
-if string==reverseWord:
-    print("string is a palindrome")
-else:
-    print("string isnt a palindrome")
+result="string is a palindrome" if string==reverseWord else "string isnt a palindrome";
+print(result);
